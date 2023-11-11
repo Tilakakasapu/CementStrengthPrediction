@@ -30,5 +30,5 @@ class ModelTrainer:
         gb_rg = GradientBoostingRegressor(learning_rate= self.config.learning_rate,max_depth= self.config.max_depth,min_samples_leaf= self.config.min_samples_leaf,min_samples_split= self.config.min_samples_split,n_estimators= self.config.n_estimators)
         gb_rg.fit(train_x,train_y)
         logger.info("training of the model is going to done saving files......")
-        joblib.dump(scaler,os.path.join(self.config.root_dir,self.config.model_name))
-        joblib.dump(gb_rg,os.path.join(self.config.root_dir,"scaler"))
+        joblib.dump(gb_rg,os.path.join(self.config.root_dir,self.config.model_name))
+        joblib.dump(scaler,os.path.join(self.config.root_dir,"scaler"))
