@@ -1,0 +1,12 @@
+COLUMNS:
+  Cement: float64
+  Blast: float64
+  Fly: float64
+  Water: float64
+  Superplasticizer: float64
+  Coarse: float64
+  Fine: float64
+  Age: int64
+  Concrete: float64
+TARGET COLUMN:
+  name: Concrete
