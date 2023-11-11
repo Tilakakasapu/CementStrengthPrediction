@@ -22,5 +22,5 @@ with st.form("my_form"):
       scaler.transform(df)
       model = joblib.load('artifacts\model_trainer\model.joblib')
       y_pred = model.predict(df)
-      st.write("# CEMENT STRENGTH : ",y_pred)
-      st.write("Outside the form")
+      st.write("# CEMENT STRENGTH : ",str(y_pred))
+      #hello
